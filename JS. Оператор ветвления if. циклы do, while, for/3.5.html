@@ -1,16 +1,12 @@
 <meta charset = "utf-8">
 <script>
-var a = prompt("Введите фамилию: ")
-var len = a.length
-var cym = 0;
-for (var i = 0; i <= (~~(len / 2)); i++){
-	if (a.slice(i, i + 1) == a.slice(len - i - 1, len - i)){
-		cym = cym + 1
+	var a = prompt("Введите фамилию: ")
+	var len = a.length;
+	for (var i = 0; i < len; i++) {
+		if (i == (len - i - 1)) {
+			alert("Палиндром");
+		} else {
+			alert("Не палиндром")
+		}
 	}
-};
-if (cym >= (~~(len / 2))){
-	alert('Палиндром')
-} else {
-	alert('Не палиндром')
-}
 </script>
