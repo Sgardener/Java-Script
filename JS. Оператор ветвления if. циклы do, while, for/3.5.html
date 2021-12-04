@@ -1,11 +1,16 @@
 <meta charset = "utf-8">
 <script>
-	alert("Моя фамилия - Егоров")
-	p = prompt("Это пишется наоборот вот так:")
-	if (p == "Егоров")
-	{
-		alert("Моя фамилия палиндром")
-	} else {
-		alert("Моя фамилия не палиндром")
+var a = prompt("Введите фамилию: ")
+var len = a.length
+var cym = 0;
+for (var i = 0; i <= (~~(len / 2)); i++){
+	if (a.slice(i, i + 1) == a.slice(len - i - 1, len - i)){
+		cym = cym + 1
 	}
+};
+if (cym >= (~~(len / 2))){
+	alert('Палиндром')
+} else {
+	alert('Не палиндром')
+}
 </script>

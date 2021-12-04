@@ -1,7 +1,11 @@
 <meta charset = "utf-8">
 <script>
 	alert("Мой номер в журнале - 12")
-	var a = 1
-	a = 12 * 11 * 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
-	alert("Факториал - " + a)
+	a = 12
+	b = a
+	while (a != 2) {
+		b = b * (a - 1)
+		a = a - 1
+		alert(b)
+	}
 </script>
